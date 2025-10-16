@@ -25,7 +25,7 @@ public class AnagramCheck_5 {
         str1 = str1.replaceAll("\\s", "").toLowerCase();
         str2 = str2.replaceAll("\\s", "").toLowerCase();
 
-        // Step 2: If lengths don't match, instantly return false
+        // Step 2: If lengths don't match, instantly return false (it's for Performance Optimization : if length doesn't match then no need to sort them and it's save time )
         if (str1.length() != str2.length()) {
             return false;
         }
