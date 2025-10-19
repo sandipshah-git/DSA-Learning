@@ -1,30 +1,20 @@
-import java.util.Arrays;
-
 public class Z_PracticeSection {
+
     public static void main(String[] args) {
-        // Anagram checking practice
+        // fabonacci 6 : 0 1 1 2 3 5 
+        int number = 6;
 
-        String str1 = "Listefn";
-        String str2 = "sile\t nt";
+        fabonacci(number);
+    }
+
+    public static void fabonacci(int num){
+        // int first = 0;
+        // int second = 1;
+
         
-        isAnagram(str1, str2);
+        for(int i = 0; i < 6; i++){
+            // int next = first + second;
 
-    }
-    public static void isAnagram(String str1 , String str2){
-        str1 = str1.replaceAll("\\s", "").toLowerCase();
-        str2 = str2.replaceAll("\\s", "").toLowerCase();
-
-        char [] arr1 = str1.toCharArray();
-        char [] arr2 = str2.toCharArray();
-
-        Arrays.sort(arr1);
-        Arrays.sort(arr2);
-
-        if(Arrays.equals(arr1, arr2)){
-            System.out.println("This is anagram.");
         }
-        else
-        System.out.println("it is not anagram.");
     }
-
 }
