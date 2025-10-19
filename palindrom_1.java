@@ -15,7 +15,7 @@
 			to represent non-printable or special-purpose symbols inside a string (\n  \t  \r   \s).
 			*/
 
-public class palindrom {
+public class palindrom_1 {
 	public static void main(String[] args) {
 		String str = "Ra\tce  \ncar";
 
